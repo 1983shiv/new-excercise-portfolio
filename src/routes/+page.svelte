@@ -1,6 +1,7 @@
 <script>
 	import Col2 from '../components/Col2.svelte';
 	import Col2Right from '../components/Col2Right.svelte';
+	import Faq from '../components/Faq.svelte';
 
 	import HomeHeroSec1 from '../components/HomeHeroSec1.svelte';
 	import Timeline from '../components/Timeline.svelte';
@@ -66,6 +67,8 @@
 			<Col2Right title={item.title} imgsrc={item.imgsrc} desc={item.desc} />{/if}
 	{/each}
 </div>
+
+<Faq />
 
 <div class="lg:px-16 px-6 py-8 text-center">
 	<h1 class="text-4xl font-bold my-2 py-2 italic text-shades-900">
