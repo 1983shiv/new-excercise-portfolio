@@ -1,12 +1,12 @@
 <script>
-  import moment from "moment";
+
   export let title = "New Year's Day";
-  export let date;
   // export let excerpt;
   export let imgsrc;
-  export let left = true;
+  export let left;
   export let eventID;
   export let slug;
+  export let desc;
 </script>
 
 <div class="timeline">
@@ -23,12 +23,13 @@
               height="120px"
             />
 
-            <div class="p-6">
+            <div class="p-2">
               <h1 class="title-font text-lg font-medium text-shades-900 mb-3">
                 {title}
               </h1>
-              {moment(date).format("Do MMMM YYYY")}
+              <p class="mb-2 p-2 leading-relaxed text-sm">{desc}</p>
             </div>
+            
           </a>
         </div>
       </div>
