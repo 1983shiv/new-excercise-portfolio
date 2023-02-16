@@ -1,26 +1,26 @@
 <script>
 
-  export let title = "New Year's Day";
+  export let title;
   // export let excerpt;
   export let imgsrc;
   export let left;
-  export let eventID;
-  export let slug;
+  // export let eventID;
+  // export let slug;
   export let desc;
 </script>
 
 <div class="timeline">
-  <div class="container" class:left class:right={!left} id={eventID}>
+  <div class="container" class:left class:right={!left}>
     <div class="content">
       <div class="w-full cover">
         <div class="shadow rounded-lg overflow-hidden">
-          <a class="mt-2" href="articles/{slug}" {title}>
+          <a class="mt-2" href="/">
             <img
               class="w-full object-cover object-center overflow-hidden max-h-60"
               src={imgsrc}
               alt={title}
-              width="200px"
-              height="120px"
+              width="400px"
+              height="auto"
             />
 
             <div class="p-2">
